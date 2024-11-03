@@ -2,11 +2,6 @@
 import OpenAI from "openai";
 const openai = new OpenAI();
 
-// Create an instance of the OpenAI class
-const client = new OpenAI({
-    apiKey: `${apiKey}`,
-  });
-
   const completion = await openai.chat.completions.create({
     model: "gpt-4o-mini",
     messages: [
